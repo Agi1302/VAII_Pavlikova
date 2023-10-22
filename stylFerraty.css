@@ -51,7 +51,7 @@ a.dropdown-item:hover {
 }
 
 body {
-    background-image: url("/Obrazky/Pozadie2.jpg");
+    background-image: url("/Obrazky/PozadieFerraty.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,77 +60,38 @@ body {
     height: 100vh;
 }
 
-.obrazokLoga {
-    width: 5rem;
+.obrazokFerrataMartin{
+    height: 16rem;
+    width: 25rem;
+    margin: 1rem 0.5rem 1rem 0;
+    border-radius: 15px; /* zakrivené rohy pre obrázok */
+}
+.sirokyObrazok{
+    height: 16rem;
+    width: 85rem;
+    margin: 1rem 0.5rem 1rem 0;
+    border-radius: 15px; /* zakrivené rohy pre obrázok */
 }
 
-.filtrovanie {
-
-    padding-top: 23rem;
+.textyFerrat{
+    margin:20rem 13rem 0 13rem;
 }
 
-.filtre{
-    background-color: #214957;
-    color: white;
+.odstavec{
+    border-radius: 30px; /* zakrivené rohy pre obrázok */
+    background-color: rgba(0, 0, 0, 0.70);
+    padding: 0.9rem;
+    margin-bottom: 1.8rem;
 }
 
-.aplikovatTlac{
-    width: 100%;
-    background-color: #214957;
-    color: white;
-    border-width: 1px;
-    border-color: white;
-}
-.aplikovatTlac:hover{
-    background-color: white;
-    color: #214957;
-}
-.aplikovatTlac:after{
-    background-color: #214957;
-    color: white;
-}
-.aplikovatTlac:active{
-    background-color: #214957;
-    color: white;
-}
-
-.karticka {
-    background-color: rgba(0, 0, 0, 0.37);
-
-    border-radius: 10px;
-    padding: 20px; /* vnútorný okraj */
-    margin: 0 0 20px 0; /* vonkajší okraj */
-
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-.karticka img {
-    border-radius: 10px; /* zakrivené rohy pre obrázok */
-    margin-bottom: 15px; /* priestor medzi obrázkom a textom */
-    flex-shrink: 0; /* zabraňuje zmenšeniu obrázka */
-}
-
-
-.karticka {
-
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.kartickaNadpisy {
-    font-size: 2rem;
-}
-
-.dropdown-menuHlavnaStranka {
-    background-color: #214957;
-}
-.dropdown-item {
-    color: white;
+.full-width-image {
+    background-image: url("/Obrazky/sirokyObrazok.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 16rem;
+    width: 97.5%;
+    border-radius: 15px;
+    margin: 0.9rem;
 }
 
