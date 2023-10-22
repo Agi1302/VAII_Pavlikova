@@ -25,26 +25,42 @@
             </div>
             <div class="text-center mt-3 collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav mx-auto ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Turistické oblasti
+                    </a>
+                    <ul class="dropdown-menu  dropdown-menuHlavnaStranka" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Vysoké Tatry</a></li>
+                        <li><a class="dropdown-item" href="#">Nízke Tatry</a></li>
+                        <li><a class="dropdown-item" href="#">Velká Fatra</a></li>
+                        <li><a class="dropdown-item" href="#">Malá Fatra</a></li>
+                    </ul>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Ferraty</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Book Hotel</a>
+                        <a class="nav-link" href="#">Vodopády</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destinations</a>
+                        <a class="nav-link" href="#">Chaty</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Policy</a>
+                        <a class="nav-link" href="#">Fórum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Q&A</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pomoc</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Company
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Všeobecné
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                            <li><a class="dropdown-item" href="#">About Us</a></li>
-                            <li><a class="dropdown-item" href="#">Contact us</a></li>
+                        <ul class="dropdown-menu dropdown-menuHlavnaStranka" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Prihlásenie</a></li>
+                            <li><a class="dropdown-item" href="#">Registrácia</a></li>
+                            <li><a class="dropdown-item" href="#">Užitočné odkazy</a></li>
+
                         </ul>
                     </li>
                 </ul>
@@ -52,14 +68,14 @@
         </div>
     </div>
 
-    <div class="container  sekcia1">
+    <div class="container  filtrovanie">
 
         <!-- Riadok s filtrami -->
         <div class="row">
             <!-- Filter: Typ túry -->
             <div class="col-md-2 mb-3">
-                <select class="form-select" id="tourType">
-                    <option selected>Typ túry</option>
+                <select class="form-select filtre" id="tourType">
+                    <option selected>TYP TÚRY</option>
                     <option value="1">Horská túra</option>
                     <option value="2">Bicyklová túra</option>
                     <option value="3">Vodná túra</option>
@@ -68,9 +84,18 @@
             </div>
 
             <!-- Filter: Obtiažnosť -->
-            <div class="col-md-3 mb-3">
-                <select class="form-select" id="difficulty">
-                    <option selected>Obtiažnosť</option>
+            <div class="col-md-2 mb-3">
+                <select class="form-select filtre" id="difficulty">
+                    <option selected>NÁROČNOSŤ</option>
+                    <option value="1">Ľahká</option>
+                    <option value="2">Stredná</option>
+                    <option value="3">Ťažká</option>
+                </select>
+            </div>
+
+            <div class="col-md-2 mb-3">
+                <select class="form-select filtre" id="season">
+                    <option selected>ROČNÉ OBDOBIE</option>
                     <option value="1">Ľahká</option>
                     <option value="2">Stredná</option>
                     <option value="3">Ťažká</option>
@@ -78,9 +103,9 @@
             </div>
 
             <!-- Filter: Dĺžka trasy -->
-            <div class="col-md-2 mb-3">
-                <select class="form-select" id="routeLength">
-                    <option selected>Dĺžka trasy</option>
+            <div class="col-md-2 mb-3 ">
+                <select class="form-select filtre" id="routeLength">
+                    <option selected>DĹŽKA TRASY</option>
                     <option value="1">Do 5 km</option>
                     <option value="2">5 - 15 km</option>
                     <option value="3">Nad 15 km</option>
@@ -88,9 +113,9 @@
             </div>
 
             <!-- Filter: Dostupnosť -->
-            <div class="col-md-3 mb-3">
-                <select class="form-select" id="availability">
-                    <option selected>Dostupnosť</option>
+            <div class="col-md-2 mb-3">
+                <select class="form-select filtre" id="availability">
+                    <option selected>DOSTUPNOSŤ</option>
                     <option value="1">Dostupné ihneď</option>
                     <option value="2">Rezervácia potrebná</option>
                     <option value="3">Plné</option>
@@ -98,12 +123,45 @@
             </div>
             <!-- Tlačidlo na aplikovanie filtrov -->
             <div class="text-center col-md-2 mb-3">
-                <button type="button" class="btn btn-primary">Aplikovať</button>
+                <button type="button" class="btn btn-primary aplikovatTlac">Aplikovať</button>
             </div>
 
         </div>
 
     </div>
 
+    <div class="container mt-5">
+
+        <!-- Riadok 1 -->
+        <div class="row justify-content-center">
+
+            <!-- Stĺpec 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="karticka">
+                    <p class="mt-2 kartickaNadpisy">Lomnícky štít</p>
+                    <img src="/Obrazky/LomnickyStit.jpg" class="img-fluid" alt="Popis">
+                    <p class="mt-2">Text pod obrázkom 1</p>
+                </div>
+            </div>
+
+            <!-- Stĺpec 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="karticka">
+                    <p class=" mt-2 kartickaNadpisy">Kriváň</p>
+                    <img src="/Obrazky/Krivan.jpg" class="img-fluid" alt="Popis">
+                    <p class="mt-2">Text pod obrázkom 2</p>
+                </div>
+            </div>
+
+            <!-- Stĺpec 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="karticka">
+                    <p class="mt-2 kartickaNadpisy">Rysy</p>
+                    <img src="Obrazky/Rysy.jpg" class="img-fluid" alt="Popis">
+                    <p class="mt-2">Text pod obrázkom 3</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
