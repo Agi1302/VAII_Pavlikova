@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -61,7 +62,7 @@ body {
 }
 
 .obrazokLoga {
-    width: 5rem;
+    width: 100px;
 }
 
 .filtrovanie {
@@ -133,4 +134,9 @@ body {
 .dropdown-item {
     color: white;
 }
+
+.dropdown-menuHlavnaStranka{
+    background-color: #214957;
+}
+
 
