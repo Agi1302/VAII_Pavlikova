@@ -167,3 +167,7 @@ body {
     border-color: #214957;
 }
 
+.dropdown-item{
+    color: white!important;
+}
+
