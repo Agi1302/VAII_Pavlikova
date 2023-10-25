@@ -64,50 +64,85 @@ body {
     height: 100vh;
 }
 
+.prazdnyDivPosun{
+    height: 10rem;
+}
+
+.nadpis{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.obrazokLavy {
+    border-radius: 0 20rem 20rem 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.obrazokPravy {
+    border-radius: 20rem 0 0 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.lavyStlpecImg {
+    /* Pridanie odsadenia na pravú stranu a prepísanie existujúcich štýlov */
+    padding: 0 2rem 0 0;
+}
+
+.pravyStlpecImg {
+    padding: 0 0 0 2rem;
+}
+
+.vodopad {
+    margin-top: 2rem!important;
+}
+
+@media (max-width: 992px) {
+    .vodopad {
+        margin-top: 5rem!important;
+    }
+}
+
+
+
+.stlpecSTextom{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.zaoblenieRohov {
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+}
+
+.row {
+    margin: 0;
+}
+
+.custom-padding-right {
+}
+
+.custom-padding-left {
+}
+
+footer {
+    background-color: #0d2f2c;
+}
+
+
 .dropdown-menuHlavnaStranka{
     color: white;
     background-color: rgba(2, 15, 38, 0.62);
 }
-
-.popisyVodopadov{
-    color: #03124b;
-    position: absolute;
-}
-
-.kartickaNadpisy{
-    color: #03124b;
-    font-size: 2.5rem;
-}
-.obrazkyVodopadov{
-    border-radius: 200px;
-    height: 22.5rem;
-    width: 100%;
-    opacity: 0.9;
-}
-@media (max-width: 1000px) {
-
-    .textyVodopadov {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-    }
-}
-
-.textyVodopadov{  /**odriadkovanie od vrchu**/
-    margin:20rem 10rem 10rem 0;
-}
-
-
-.odstavce{
-    padding: 5rem 0 5rem 0;
-
-}
-
-.dropdown-item{
-    color: rgba(255, 255, 255, 0.97);
-}
-
 
 
 

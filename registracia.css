@@ -52,7 +52,7 @@ a.dropdown-item:hover {
 
 .obrazokLoga {
     width: 100px;
-    height: 3rem;
+
 }
 
 .dropdown-menuHlavnaStranka{
@@ -151,7 +151,7 @@ body {
 }
 
 .formular{
-    margin-top: 300px;
+    padding-top: 300px;
 }
 
 .buttonPotvrdenie{
