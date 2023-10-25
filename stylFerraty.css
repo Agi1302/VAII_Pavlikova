@@ -80,11 +80,16 @@ body {
 }
 
 .textyFerrat{
-    margin:20rem 13rem 0 13rem;
+    margin:10rem 13rem 0 13rem;
+}
+
+.nadpis {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 @media (max-width: 1400px) {
-
     .textyFerrat {
         margin-left: 0;
         margin-right: 0;

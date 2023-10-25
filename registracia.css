@@ -5,6 +5,8 @@
 }
 
 
+
+
 #mainNavigation a {
     font-family: 'Cabin', sans-serif;
     font-size:14px;
@@ -50,14 +52,16 @@ a.dropdown-item:hover {
     padding:12px;
 }
 
-.obrazokLoga {
-    width: 100px;
-
+.dropdown-item{
+    color: white!important;
 }
 
-.dropdown-menuHlavnaStranka{
-    background-color: rgb(9, 41, 54);
-}
+
+
+
+
+
+
 
 
 /*registracne okno **/
@@ -100,46 +104,7 @@ form h2{
     float:left;
 }
 
-button{
-    float:right;
-    width:150px;
-    background-color: #020e1a;
-}
 
-@media(max-width:768px) {
-    body {
-        font-size: 10px;
-    }
-
-    h2 {
-        font-size: 15px;
-    }
-
-    input[type=text] {
-        font-size: 13px;
-    }
-
-    input[type=password] {
-        font-size: 13px;
-    }
-
-    input[type=email] {
-        font-size: 13px;
-    }
-
-    button {
-        width: 80px;
-        height: 30px;
-        float: right;
-        font-size: 10px;
-        margin-bottom: 10px;
-        background-color: #214957;
-    }
-
-    .checkbox {
-        display: inline;
-    }
-}
 body {
     background-image: url("/Obrazky/Pozadie2.jpg");
     background-attachment: fixed;
@@ -147,7 +112,12 @@ body {
     background-repeat: no-repeat;
     color: white;
     position: relative;
+    background-position: center;
     height: 100vh;
+}
+
+.obrazokLoga {
+    width: 6rem;
 }
 
 .formular{
@@ -161,13 +131,12 @@ body {
     font-size: 10px;
 }
 
+
 .buttonPotvrdenie:hover{
     background-color: rgba(255, 255, 255, 0.56);
     color:#214957;
     border-color: #214957;
 }
 
-.dropdown-item{
-    color: white!important;
-}
+
 
